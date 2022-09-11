@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/jenni/OneDrive/Documentos/GitHub/Lab8/app/src/main/res/layout/activity_main.xml" value="0.1859375" />
+        <entry key="..\:/Users/jenni/OneDrive/Documentos/GitHub/Lab8/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/jenni/OneDrive/Documentos/GitHub/Lab8/app/src/main/res/layout/activity_top_app_bar.xml" value="0.25" />
+        <entry key="..\:/Users/jenni/OneDrive/Documentos/GitHub/Lab8/app/src/main/res/menu/top_app_bar.xml" value="0.25" />
       </map>
     </option>
   </component>
