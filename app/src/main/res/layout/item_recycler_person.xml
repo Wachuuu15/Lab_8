@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_icon_height">
+
+
+    <ImageView
+        android:id="@+id/image_item_person"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:srcCompat="@tools:sample/avatars"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="16dp"
+        />
+
+    <TextView
+        android:id="@+id/text_name"
+        android:textStyle="bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="38dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/image_item_person"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Two-line-item" />
+
+    <TextView
+        android:id="@+id/text_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="38dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/image_item_person"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Human - bla ba" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
