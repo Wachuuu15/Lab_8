@@ -5,13 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="@dimen/list_item_icon_height">
 
-
     <ImageView
         android:id="@+id/image_item_person"
         android:contentDescription="@null"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:srcCompat="@tools:sample/avatars"
+        tools:srcCompat="@tools:sample/avatars"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"

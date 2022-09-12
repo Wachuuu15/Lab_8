@@ -5,11 +5,11 @@
     <item
         android:id="@+id/menu_item_sync"
         android:title="Ordenar A - Z"
-        app:showAction= "never"/>
+        app:showAsAction="never" />
 
     <item
         android:id="@+id/menu_item_ordenar"
-        android:title="Ordenaa Z - A"
-        app:showAsAction="never"/>
+        android:title="Ordena Z - A"
+        app:showAsAction="never" />
 
 </menu>

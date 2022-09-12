@@ -16,6 +16,9 @@
             app:popUpTo="@id/charactersFragment"
             app:popUpToInclusive="true"
             />
+        <argument
+            android:name="Person"
+            app:argType="com.example.lab8.Character" />
 
     </fragment>
 
