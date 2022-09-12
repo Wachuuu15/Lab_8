@@ -34,8 +34,6 @@ class TopAppBarActivity : AppCompatActivity() {
 
     }
 
-
-
     private fun listenToNavGraphChanges(){
         navController.addOnDestinationChangedListener{_,destination,_ ->
             when (destination.id){

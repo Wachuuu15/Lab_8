@@ -21,6 +21,8 @@ class PersonAdapter(
 
         fun setData(persona:Character){
             textName.text = persona.name
+            textinfo.text = persona.species
+            textinfo2.text= persona.status
         }
     }
 
