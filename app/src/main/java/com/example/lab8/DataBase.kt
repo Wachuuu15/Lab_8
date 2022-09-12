@@ -11,7 +11,6 @@ data class Character(
 ): Serializable
 
 object RickAndMortyDB {
-
     private val characters = mutableListOf(
         Character(
             name = "Rick Sanchez",
