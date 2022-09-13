@@ -3,9 +3,7 @@ package com.example.lab8
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Toolbar
 import androidx.navigation.NavController
-import androidx.navigation.NavHost
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupWithNavController
@@ -22,16 +20,14 @@ class TopAppBarActivity : AppCompatActivity() {
 
         //configurar
         val navHostFragment = supportFragmentManager.findFragmentById(
-            R.id.fragmentContainer_basicToolbarActivity
-        )as NavHostFragment
+        R.id.fragmentContainer_basicToolbarActivity
+    )as NavHostFragment
         navController = navHostFragment.navController
 
         val appbarConfig = AppBarConfiguration(navController.graph)
         toolbar = findViewById(R.id.toolbar_topAppbarActivity)
         toolbar.setupWithNavController(navController, appbarConfig)
         listenToNavGraphChanges()
-
-
     }
 
     private fun listenToNavGraphChanges(){
