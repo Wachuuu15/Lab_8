@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity(){
         personList = RickAndMortyDB.getCharacters()
 
     }
-    
+
     private fun listenToNavGraphChanges(){
         navController.addOnDestinationChangedListener{_,destination,_ ->
             when (destination.id){
