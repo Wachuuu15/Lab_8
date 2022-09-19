@@ -51,7 +51,6 @@ class MainActivity : AppCompatActivity(){
 
     private fun setUpRecycler() {
         personList = RickAndMortyDB.getCharacters()
-
     }
 
     private fun listenToNavGraphChanges(){

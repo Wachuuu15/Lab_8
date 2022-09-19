@@ -33,7 +33,6 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
             textgender.text = args.persona.gender
             imageViewpersona.load(args.persona.image)
 
-
     }
 
 
