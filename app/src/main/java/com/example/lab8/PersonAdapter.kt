@@ -9,6 +9,7 @@ import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
+import coil.request.CachePolicy
 
 class PersonAdapter(
 
@@ -18,6 +19,7 @@ class PersonAdapter(
 
     interface RecyclerPersonClickHandler{
         fun onPersonClicked(persona: Character)
+
     }
 
     class ViewHolder(private val view : View,
@@ -35,7 +37,9 @@ class PersonAdapter(
             textName.text = persona.name
             textinfo.text = persona.species
             textinfo2.text = persona.status
-            imageView.load(persona.image)
+            imageView.load(persona.image){
+                memoryCachePolicy(CachePolicy.DISABLED)
+            }
 
             layoutPerson.setOnClickListener{
                 listener.onPersonClicked(persona)
