@@ -1,4 +1,4 @@
-package com.example.lab8
+package com.example.lab8.fragments
 
 import android.os.Bundle
 import android.view.View
@@ -7,6 +7,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
 import coil.load
+import com.example.lab8.R
 
 
 class DetailsFragment : Fragment(R.layout.fragment_details) {

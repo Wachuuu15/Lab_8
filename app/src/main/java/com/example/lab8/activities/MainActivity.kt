@@ -1,4 +1,4 @@
-package com.example.lab8
+package com.example.lab8.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,7 +7,9 @@ import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupWithNavController
-import androidx.recyclerview.widget.RecyclerView
+import com.example.lab8.Character
+import com.example.lab8.R
+import com.example.lab8.RickAndMortyDB
 import com.google.android.material.appbar.MaterialToolbar
 
 class MainActivity : AppCompatActivity(){
@@ -37,11 +39,11 @@ class MainActivity : AppCompatActivity(){
         toolbar.setOnMenuItemClickListener{
             //dependiendo de la opcion
             when(it.itemId){
-              R.id.menu_item_sync->{
+              R.id.menu_item_sync ->{
                   personList.sortBy {Character -> Character.name}
 
               }
-                R.id.menu_item_ordenar->{
+                R.id.menu_item_ordenar ->{
                     personList.sortByDescending { Character -> Character.name }
                 }
             }

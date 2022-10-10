@@ -1,10 +1,14 @@
-package com.example.lab8
+package com.example.lab8.fragments
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.lab8.Character
+import com.example.lab8.R
+import com.example.lab8.RickAndMortyDB
+import com.example.lab8.adapters.PersonAdapter
 
 
 class CharactersFragment : Fragment(R.layout.fragment_characters), PersonAdapter.RecyclerPersonClickHandler{

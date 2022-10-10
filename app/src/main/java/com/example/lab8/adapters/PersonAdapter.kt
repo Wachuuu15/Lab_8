@@ -1,4 +1,4 @@
-package com.example.lab8
+package com.example.lab8.adapters
 
 
 import android.view.LayoutInflater
@@ -9,6 +9,9 @@ import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
+import com.example.lab8.Character
+import com.example.lab8.fragments.CharactersFragment
+import com.example.lab8.R
 
 class PersonAdapter(
 
@@ -21,7 +24,8 @@ class PersonAdapter(
     }
 
     class ViewHolder(private val view : View,
-                     private val listener: RecyclerPersonClickHandler): RecyclerView.ViewHolder(view){
+                     private val listener: RecyclerPersonClickHandler
+    ): RecyclerView.ViewHolder(view){
 
         private val layoutPerson: ConstraintLayout =  view.findViewById(R.id.item_layoutPersona)
         private val imageView: ImageView = view.findViewById(R.id.image_item_person)
@@ -31,7 +35,7 @@ class PersonAdapter(
 
 
 
-        fun setData(persona:Character){
+        fun setData(persona: Character){
             textName.text = persona.name
             textinfo.text = persona.species
             textinfo2.text = persona.status
